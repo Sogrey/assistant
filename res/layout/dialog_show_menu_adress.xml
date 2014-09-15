@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_show_menu_showall_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@drawable/img_showall_menu_address"
+        android:text="@string/txt_show_menu_showall_address"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_show_menu_deleteall_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@drawable/img_deleteall_menu_address"
+        android:text="@string/txt_show_menu_deleteall_address"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_show_menu_back_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@drawable/img_back_menu_address"
+        android:text="@string/txt_show_menu_back_address"
+        android:textColor="@color/white" />
+
+</LinearLayout>

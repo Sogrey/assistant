@@ -1,0 +1,148 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.feicui.assistant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+    <!-- 注册相机使用权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 注册扩展储存权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 杀死后台进程权限 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- wifi权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 手机权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读通话记录权限 -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <!-- 读通讯录权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+     <!-- 写通讯录权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+    <application
+        android:name="edu.feicui.assistant.main.AssistantApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+
+        <!-- Logo -->
+        <activity android:name="edu.feicui.assistant.main.LogoActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Activity 基础类 -->
+        <activity android:name="edu.feicui.assistant.base.BaseActivity" >
+        </activity>
+        <!-- DialogUtil 工具类 对话框 -->
+        <activity android:name="edu.feicui.assistant.util.DialogUtil" >
+        </activity>
+        <!-- MenuActivity 主界面 -->
+        <activity android:name="edu.feicui.assistant.main.MenuActivity" >
+        </activity>
+        <!-- AlarmActivity 闹铃 -->
+        <activity
+            android:name="edu.feicui.assistant.alarm.AlarmActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- AddressTabActivity 通讯录Tab -->
+        <activity
+            android:name="edu.feicui.assistant.address.AddressTabActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- AddressActivity 通讯录 -->
+        <activity
+            android:name="edu.feicui.assistant.address.AddressActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- CallsActivity 通話記錄 -->
+        <activity
+            android:name="edu.feicui.assistant.address.CallsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- AddressProvider 通讯录内容提供者 -->
+        <provider
+            android:name="edu.feicui.assistant.provider.AddressProvider"
+            android:authorities="edu.feicui.assistant.provider.ADDRESS"
+            android:exported="true" >
+
+            <!--
+                 authorities 相当于注册到系统中provider的名字
+             	 exported 导出以供其他外部程序使用
+            -->
+        </provider>
+          <!-- EditActivity 编辑联系人界面 -->
+                <activity
+            android:name="edu.feicui.assistant.address.EditActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- BatteryActivity 电池管家 -->
+        <activity
+            android:name="edu.feicui.assistant.battery.BatteryActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- MaintenanceActivity 电池维护 -->
+        <activity
+            android:name="edu.feicui.assistant.battery.ChargeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- MonitorActivity 电池监控 -->
+        <activity
+            android:name="edu.feicui.assistant.battery.MonitorActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- CameraActivity 相机 -->
+        <activity
+            android:name="edu.feicui.assistant.camera.CameraActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+
+                <!-- 表明拥有某些功能 -->
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- ConfirmActivity 相片保存界面 -->
+        <activity
+            android:name="edu.feicui.assistant.camera.ConfirmActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- HardwareActivity 硬件加速 -->
+        <activity
+            android:name="edu.feicui.assistant.hardware.HardwareActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- SpeedupActivity 手机加速 -->
+        <activity
+            android:name="edu.feicui.assistant.hardware.SpeedupActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- SystemTestActivity 系统检测 -->
+        <activity
+            android:name="edu.feicui.assistant.hardware.SystemTestActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- SoftwareActivity 软件管理 -->
+        <activity
+            android:name="edu.feicui.assistant.software.SoftwareActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- CommonSoftwareActivity 软件应用界面基类-0：系统应用，1：用户应用 -->
+        <activity
+            android:name="edu.feicui.assistant.software.CommonSoftwareActivity"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+
+    <TextView
+        android:id="@+id/txt_appnum_hardware"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_appnum_hardware" />
+    <TextView
+        android:id="@+id/txt_memoryuse_hardware"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_memoryuse_hardware" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:id="@+id/pgb_memoryused_percent_hardware"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_memoryused_percent_hardware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_memoryused_percent_hardware" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lst_softlist_hardware"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_onekey_speedup_hardware"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_onekey_speedup_hardware" />
+
+</LinearLayout>

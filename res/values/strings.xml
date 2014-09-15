@@ -1,0 +1,194 @@
+<resources>
+
+    <string name="app_name">天天多功能手机助手</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="txt_unknown">未知</string>
+    
+    <string name="hint_software">软件管家</string>
+    <string name="hint_address">通讯录</string>
+    <string name="hint_battery">电池管理</string>
+    <string name="hint_camera">照相机</string>
+    <string name="hint_alarm">闹钟</string>
+    <string name="hint_hardware">硬件加速</string>
+    
+    <string name="btn_alarm_on">开启闹钟</string>
+    <string name="btn_alarm_off">关闭闹钟</string>
+    <string name="btn_alarm_settime">设置时间</string>
+    <string name="txttitle_alarm_set">设置</string>
+    <string name="alarm_set_start">闹钟启用</string>
+    <string name="alarm_set_noset">还没有设置闹钟，请先设置</string>
+    <string name="alarm_ring_hint">响铃</string>
+    <string name="hint_settime_alarm">设置闹钟时间为  </string>
+    <string name="txt_dialog_button_iknown_alarm">知道了 </string>
+    <string name="txt_dialog_message_timenow_alarm">亲，时间到了！ </string>
+    
+    <string name="btn_opencapeture_camera">打开相机</string>
+    <string name="tint_noflash_camera">您的设备不支持闪光灯</string>
+    <string name="tint_nopicsize_camera">您的设备不支持切换照片尺寸</string>
+    <string name="txt_size_camera">×</string>
+    <string name="btn_showpic_delete_camera">删除</string>
+    <string name="btn_showpic_save_camera">储存</string>
+    <string name="focus_success_camera">对焦结果：成功</string>
+    <string name="focus_fail_camera">储存</string>
+    <string name="shutter_camera">快门按下</string>
+    <string name="saveto_camera">已储存到</string>
+    <string name="delete_temp_camera">缓存已删除</string>
+    <string name="txt_title_dialog_camera">相机</string>
+    <string name="txt_message_dialog_nocamera_camera">亲，您的设备没有可用摄像头！</string>
+    
+    <string name="txttitle_tab_moniter_battery">电池监控</string>
+    <string name="txttitle_tab_maintenance_battery">电池维护</string>
+    <string name="txt_tint_level_battery">电量：</string>
+    <string name="txt_tint_mode_battery">电池状态：</string>
+    <string name="txt_tint_temperature_battery">电池温度：</string>
+    <string name="txt_tint_voltage_battery">电池电压：</string>
+    <string name="txt_tint_health_battery">健康状态：</string>
+    <string name="txt_tint_io_battery">接口状态：</string>
+    <string name="txt_tint_workmanship_battery">制造工艺：</string>
+    <string name="txt_tint_normaluse_battery">电池正常使用中</string>
+    <string name="txt_tint_charging_battery">正在充电中</string>
+    <string name="txt_tint_levelnow_battery">当前电量:</string>
+    <string name="txt_tint_quickcharge_battery">1.快速充电</string>
+    <string name="txt_tint_loopcharge_battery">2.循环充电</string>
+    <string name="txt_tint_tricklecharge_battery">3.涓流充电</string>
+    <string name="txt_tint_done_battery">已经完成</string>
+    <string name="txt_tint_doing_battery">进行中</string>
+    <string name="txt_tint_waiting_battery">等待中</string>
+    <string name="txt_ac_battery">充电器连接中</string>
+    <string name="txt_usb_battery">USB连接中</string>
+    <string name="txt_wireless_battery">无线充电器连接中</string>
+    <string name="txt_noplugged_battery">未连接充电器</string>
+    <string name="txt_charging_battery">充电中</string>
+    <string name="txt_charging_now_battery">正在充电中</string>
+    <string name="txt_discharging_battery">充当电源中</string>
+    <string name="txt_no_charging_battery">电池正常使用中</string>
+    <string name="txt_full_battery">已充满</string>
+    <string name="txt_unknown_battery">未知状态</string>
+    <string name="txt_good_battery">良好</string>
+    <string name="txt_over_heat_battery">温度过高</string>
+    <string name="txt_dead_battery">电池报废</string>
+    <string name="txt_over_vcltage_battery">电压过高</string>
+    <string name="txt_cold_battery">温度过低</string>
+    <string name="txt_unspecified_failure_battery">未知原因获取失败</string>
+    <string name="txt_celsius_battery">℃</string>
+    <string name="txt_millivolt_battery">mv</string>
+    <string name="txt_percent">%</string>
+    <string name="txt_percent_unknown" formatted="false">--%</string>
+    <string name="txt_tips_battery" formatted="false">健康小巴士：\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020电量低于10%时打开电池维护，为您进行健康充电，建议每月进行一次健康充电，保养电池。\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020快速充电阶段：使用恒流进行快速充电，快速将电池充到80%，建议继续进行，将手机电池充满。\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020循环充电阶段：电量即将充满的状态。\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020涓流充电：保持充电状态。</string>
+    
+    <string name="txttitle_tab_system_software">系统软件</string>
+    <string name="txttitle_tab_user_software">用户软件</string>
+    <string name="txt_app_type_num_software">%1$s程序个数为%2$d个</string>
+    <string name="txt_system_software">系统</string>
+    <string name="txt_user_software">用户</string>
+    <string name="txt_icon_software">程序图标</string>
+    <string name="txttitle_dialog_option_software">选项</string>
+    <string name="txtitem_dialog_info_software">详细信息</string>
+    <string name="txtitem_dialog_uninstal_software">卸载程序</string>
+    
+    <string name="txttitle_tab_speedup_hardware">手机加速</string>
+    <string name="txttitle_tab_systemtest_hardware">系统检测</string>
+    <string name="txt_appname_hardware">软件名</string>
+    <string name="txt_appnum_hardware">应用程序：%1$d个</string>
+    <string name="txt_memoryuse_hardware">已用/可用内存：%1$s/%2$s</string>
+    <string name="txt_memoryused_percent_hardware" >已使用内存：%1$d%%</string>
+    <string name="txt_onekey_speedup_hardware">一键加速</string>
+    <string name="txt_details_hardware">服务：%1$d\n内存：%2$sMB</string>
+    
+    <string name="txt_devtype_hardware">设备型号：</string>
+    <string name="txt_sysver_hardware">系统版本：</string>
+    <string name="txt_isbn_hardware">手机串号：</string>
+    <string name="txt_service_hardware">运营商：</string>
+    <string name="txt_brand_hardware">手机品牌：</string>
+    <string name="txt_product_hardware">产品名称：</string>
+    <string name="txt_model_hardware">对外名称：</string>
+    <string name="txt_phonenum_hardware">手机号：</string>
+    <string name="txt_baseband_hardware">基带版本：</string>
+    <string name="txt_mobile_hardware">中国移动</string>
+    <string name="txt_woo_hardware">中国联通</string>
+    <string name="txt_telecommunication_hardware">中国电信</string>
+    
+    <string name="txt_cputype_hardware">CPU型号：%1$s</string>
+    <string name="txt_cpunum_hardware">CPU核心数：%1$d</string>
+    <string name="txt_maxfreq_hardware">最高频率：%1$s</string>
+    <string name="txt_minfreq_hardware">最低频率：%1$s</string>
+    <string name="txt_curfreq_hardware">当前频率：%1$s</string>
+    
+    <string name="txt_memruntotal_hardware">运行内存总量：%1$s</string>
+    <string name="txt_memavaitotal_hardware">手机可用内存：%1$s</string>
+    <string name="txt_memsdtotal_hardware">sd卡内存总量：%1$s</string>
+    
+    <string name="txt_split_screen_hardware">屏幕分辨率：</string>
+    <string name="txt_pic_maxsize_hardware">照片最大尺度：</string>
+    <string name="txt_pix_sizemul_hardware">×</string>
+    <string name="txt_flash_hardware">闪光灯:</string>
+    <string name="txt_flash_yes_hardware">支持闪光灯</string>
+    <string name="txt_flash_no_hardware">不支持闪光灯</string>
+    <string name="txt_no_camera_hardware">没有找到可用的摄像头</string>
+    
+    <string name="txt_def_hardware">手机像素：</string>
+    <string name="txt_dot_density_hardware">像素密度：</string>
+    <string name="txt_mulpointer_hardware">多点触控：</string>
+    <string name="txt_mulpointer_yes_hardware">支持多点触摸</string>
+    <string name="txt_mulpointer_no_hardware">不支持多点触摸</string>
+
+    <string name="txt_wifi_connectto_hardware">WIFI连接到：</string>
+    <string name="txt_wifi_noconnect_hardware">未连接WIFI</string>
+    <string name="txt_wifi_ip_hardware">WIFI地址：</string>
+    <string name="txt_wifi_rate_hardware">WIFI连接速度：</string>
+    <string name="txt_wifi_mac_hardware">MAC地址：</string>
+    <string name="txt_wifi_bt_add_hardware">蓝牙地址：</string>
+    <string name="txt_wifi_bt_name_hardware">蓝牙设备名：</string>
+    <string name="txt_wifi_bt_state_hardware">蓝牙状态：</string>
+    <string name="txt_wifi_bt_state_on_hardware">蓝牙已打开</string>
+    <string name="txt_wifi_bt_state_off_hardware">蓝牙已关闭</string>
+    <string name="txt_wifi_bt_state_turningon_hardware">蓝牙正在打开 ... </string>
+    <string name="txt_wifi_bt_state_turningoff_hardware">蓝牙正在关闭...</string>
+
+    <string name="txt_incoming_type_calls">呼入</string>
+    <string name="txt_outgoing_type_calls">呼出</string>
+    <string name="txt_missed_type_calls">未接</string>
+    <string name="txt_unknown_number_calls">未知号码</string>
+    <string name="txt_unknown_people_calls">陌生人</string>
+    <string name="txt_item_name_address">姓名：%1$s</string>
+    <string name="txt_item_number_address">电话：%1$s</string>
+    <string name="txt_menu_add_address">增加</string>
+    <string name="txt_menu_find_address">查找</string>
+    <string name="txt_menu_call_address">通讯</string>
+    <string name="txt_menu_menu_address">菜单</string>
+    <string name="txt_menu_exit_address">退出</string>
+    <string name="txt_dialog_title_address">选项</string>
+    <string name="txt_infodialog_title_address">联系人信息</string>
+    <string name="txt_add_number_address">手机：</string>
+    <string name="txt_add_officenumber_address">办公室电话：</string>
+    <string name="txt_add_homenumber_address">家庭电话：</string>
+    <string name="txt_add_jobtitle_address">职务职称：</string>
+    <string name="txt_add_company_address">单位名称：</string>
+    <string name="txt_add_address_address">地址：</string>
+    <string name="txt_add_postal_address">邮政编码：</string>
+    <string name="txt_add_email_address">E-mail：</string>
+    <string name="txt_add_other_address">其他联系方式：</string>
+    <string name="txt_add_qq_address">QQ：</string>
+    <string name="txt_add_note_address">备注：</string>
+    <string name="txt_add_icon_address">联系人头像</string>
+    <string name="btn_add_save_address">保存</string>
+    <string name="btn_add_delete_address">删除</string>
+    <string name="btn_add_back_address">返回</string>
+    <string name="btn_add_people_success_address">添加联系人[%1$s]成功</string>
+    <string name="btn_edit_people_success_address">编辑联系人[%1$s]成功</string>
+    <string name="txt_tab_calls_address">通话记录</string>
+    <string name="txt_menu_calls_address">记录</string>
+    <string name="txt_tab_people_address">联系人</string>
+    <string name="txt_no_name_address">姓名不能为空！</string>
+    <string name="txt_show_menu_showall_address">显示所有</string>
+    <string name="txt_show_menu_deleteall_address">删除所有</string>
+    <string name="txt_show_menu_back_address">后退</string>
+    <string name="txt_title_isdelall_address">是否删除所有</string>
+    <string name="txt_title_isdelthis_address">是否删除当前联系人</string>
+    <string name="txt_deleted_address">已删除[%1$s]</string>
+
+
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_level_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/level_battery" />
+
+    <TextView
+        android:id="@+id/txt_tint_level_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/txt_tint_level_battery"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_battery_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_tint_level_battery"
+        android:layout_below="@+id/txt_tint_level_battery"
+        android:text="@string/txt_percent_unknown"
+        android:textColor="@color/dark_green"
+        android:textSize="50sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img_level_battery"
+        android:layout_below="@+id/img_level_battery"
+        android:layout_marginTop="32dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_tint_mode_battery"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_state_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_unknown"
+                android:textColor="@color/dark_green" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_tint_temperature_battery"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_temperature_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_unknown"
+                android:textColor="@color/dark_green" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_tint_voltage_battery"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_voltage_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_unknown"
+                android:textColor="@color/dark_green" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_tint_health_battery"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_health_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_unknown"
+                android:textColor="@color/dark_green" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_tint_io_battery"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_plugged_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_unknown"
+                android:textColor="@color/dark_green" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_tint_workmanship_battery"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_workmanship_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_unknown"
+                android:textColor="@color/dark_green" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyt_content_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_page" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/include_title" />
+
+        <ListView
+            android:id="@+id/lst_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edt_find_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="text"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lyt_menu_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_buttom_menu_address"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_add_people_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/btn_add_menu_address"
+                android:text="@string/txt_menu_add_address" />
+
+            <Button
+                android:id="@+id/btn_find_people_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/btn_find_menu_address"
+                android:text="@string/txt_menu_find_address" />
+
+            <Button
+                android:id="@+id/btn_call_people_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/btn_call_menu_address"
+                android:text="@string/txt_menu_calls_address" />
+
+            <Button
+                android:id="@+id/btn_menu_people_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/btn_menu_menu_address"
+                android:text="@string/txt_menu_menu_address" />
+
+            <Button
+                android:id="@+id/btn_exit_people_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/btn_exit_menu_address"
+                android:text="@string/txt_menu_exit_address" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

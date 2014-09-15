@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_software"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="76dp"
+        android:layout_y="0dp"
+        android:background="@drawable/menu_software_selector" />
+    <Button
+        android:id="@+id/btn_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="44dp"
+        android:background="@drawable/menu_address_selector" />
+    <Button
+        android:id="@+id/btn_hardware"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="152dp"
+        android:layout_y="44dp"
+        android:background="@drawable/menu_hardware_selector" />
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="132dp"
+        android:background="@drawable/menu_camera_selector" />
+    <Button
+        android:id="@+id/btn_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="152dp"
+        android:layout_y="132dp"
+        android:background="@drawable/menu_alarm_selector" />
+    <Button
+        android:id="@+id/btn_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="76dp"
+        android:layout_y="174dp"
+        android:background="@drawable/menu_battery_selector" />
+
+</AbsoluteLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 条件越细腻越靠前  -->
+    <item android:state_checked="true"
+        android:drawable="@drawable/btn_table_bottom_software"/>
+    <item android:state_checked="false"
+        android:drawable="@drawable/btn_list_bottom_software"/>
+    
+</selector>

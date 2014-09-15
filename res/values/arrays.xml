@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="stringarray_item_menu_soft">
+        <item>详细信息</item>
+        <item>程序卸载</item>
+    </string-array>
+    <string-array name="stringarray_item_groups_hard">
+        <item>基本信息</item>
+        <item>CPU</item>
+        <item>内存</item>
+        <item>分辨率</item>
+        <item>像素</item>
+        <item>网络</item>
+    </string-array>
+    <string-array name="stringarray_item_dialog_address">
+        <item>电话</item>
+        <item>短信</item>
+    </string-array>
+</resources>
