@@ -12,12 +12,14 @@ import java.lang.Thread.UncaughtExceptionHandler;
 public class CrashHandler implements UncaughtExceptionHandler {
 
 	private UncaughtExceptionHandler mDefaultExceptionHandler;
-	/*
+	/**
 	 * 单例模式
 	 * 
 	 * 一个类最多只能有一个实例
 	 * 
-	 * 1、有一个私有静态成员 2、有一个公开静态方法getInstance得到这个私有静态成员 3、有一个私有的构造方法（不允许被实例化）
+	 * 1、有一个私有静态成员 
+	 * 2、有一个公开静态方法getInstance得到这个私有静态成员 
+	 * 3、有一个私有的构造方法（不允许被实例化）
 	 */
 	private static CrashHandler sInstance;
 

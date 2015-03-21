@@ -20,6 +20,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 import edu.feicui.assistant.R;
 import edu.feicui.assistant.adapter.GrdAdapter;
@@ -38,8 +39,10 @@ public class CommonSoftwareActivity extends BaseActivity implements
 	protected static final int DIALOG_ID_OPTION_SOFT = 0x10;
 	/** 选项对话框列表条目-详细信息ID */
 	protected static final int DIALOG_ID_OPTION_INFO_SOFT = 0x00;
+	/** 选项对话框列表条目-打开应用ID */
+	protected static final int DIALOG_ID_OPTION_OPEN_SOFT = 0x01;
 	/** 选项对话框列表条目-程序卸载ID */
-	protected static final int DIALOG_ID_OPTION_UNINSTAL_SOFT = 0x01;
+	protected static final int DIALOG_ID_OPTION_UNINSTAL_SOFT = 0x02;
 	/** 应用Uri的协议：schema */
 	protected static final String PACKAGE_SOFT = "package:";
 	/** 应用的类型-系统应用/用户应用 */
@@ -168,20 +171,35 @@ public class CommonSoftwareActivity extends BaseActivity implements
 		case DIALOG_ID_OPTION_INFO_SOFT:// 详细信息
 			// APILevel 2.3 以上软件详情页action
 			intent.setAction(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+			// 设置data为 package uri ： "package:"+包名
+			intent.setData(Uri.parse(PACKAGE_SOFT + info.packageName));
+			try {
+				startActivity(intent);
+			} catch (ActivityNotFoundException e) {
+				e.printStackTrace();
+			}
+			break;
+		case DIALOG_ID_OPTION_OPEN_SOFT:// 打开应用
+//			intent.setAction(Intent.ACTION_DELETE);
+			 try{
+				 intent = this.getPackageManager().getLaunchIntentForPackage(info.packageName);
+			        startActivity(intent);
+			    }catch(Exception e){
+			        Toast.makeText(this, "没有安装", Toast.LENGTH_LONG).show();
+			    }
 			break;
 		case DIALOG_ID_OPTION_UNINSTAL_SOFT:// 程序卸载
 			intent.setAction(Intent.ACTION_DELETE);
+			// 设置data为 package uri ： "package:"+包名
+			intent.setData(Uri.parse(PACKAGE_SOFT + info.packageName));
+			try {
+				startActivity(intent);
+			} catch (ActivityNotFoundException e) {
+				e.printStackTrace();
+			}
 			break;
 		default:
 			break;
 		}
-		// 设置data为 package uri ： "package:"+包名
-		intent.setData(Uri.parse(PACKAGE_SOFT + info.packageName));
-		try {
-			startActivity(intent);
-		} catch (ActivityNotFoundException e) {
-			e.printStackTrace();
-		}
 	}
-
 }

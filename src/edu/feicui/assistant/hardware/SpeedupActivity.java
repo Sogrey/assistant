@@ -133,6 +133,7 @@ public class SpeedupActivity extends BaseActivity implements OnClickListener,
 			} catch (NameNotFoundException e) {
 				e.printStackTrace();
 			}
+			
 			mTxtAppNum.setText(getString(R.string.txt_appnum_hardware,
 					mList.size()));
 			ActivityManager.MemoryInfo outInfo = new ActivityManager.MemoryInfo();
@@ -281,7 +282,6 @@ public class SpeedupActivity extends BaseActivity implements OnClickListener,
 				holder.chb_select.setVisibility(View.VISIBLE);
 				holder.chb_select.setChecked(data.checked);
 			}
-
 			return view;
 		}
 	}

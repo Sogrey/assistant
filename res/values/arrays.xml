@@ -3,6 +3,7 @@
 
     <string-array name="stringarray_item_menu_soft">
         <item>详细信息</item>
+        <item>打开应用</item>
         <item>程序卸载</item>
     </string-array>
     <string-array name="stringarray_item_groups_hard">
